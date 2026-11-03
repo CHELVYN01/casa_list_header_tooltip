@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <!-- header of a column group: the fields stacked in it (debug: technical names) -->
+    <t t-name="casa_list_header_tooltip.ColumnGroupTooltip">
+        <div class="fw-bold" t-out="label"/>
+        <div t-if="debug" class="small">Object: <t t-out="resModel"/></div>
+        <ul class="list-unstyled mb-0 mt-1">
+            <li t-foreach="fields" t-as="entry" t-key="entry_index" class="mt-1">
+                <t t-out="entry.label"/>
+                <span t-if="debug" class="opacity-75"> (<t t-out="entry.name"/>, <t t-out="entry.type"/>)</span>
+                <div t-if="entry.help" class="small opacity-75" t-out="entry.help"/>
+            </li>
+        </ul>
+    </t>
+</templates>
