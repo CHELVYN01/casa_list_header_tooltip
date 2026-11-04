@@ -8,6 +8,7 @@
     "license": "LGPL-3",
     "depends": ["sale"],
     "images": [
+        "static/description/banner_screenshot.png",
         "static/description/list_header_screenshot.png",
         "static/description/totals_screenshot.png",
     ],
