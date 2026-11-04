@@ -1,0 +1,65 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Field Tooltips for Lists, Orders and Invoices</h2>
+        <h3 class="oe_slogan">Hover a column header or a total to see the fields behind it</h3>
+        <p>
+            This module brings back tooltips on list column headers, as in Odoo 18,
+            and adds tooltips to the totals of orders and invoices. It is useful for
+            users who want to know what a column means, and for developers who need
+            field names while building views and reports.
+        </p>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">List column headers</h2>
+        <ul>
+            <li>List column headers with a label show a tooltip with the field label and its help text.</li>
+            <li>Column groups are supported. The tooltip lists every field stacked in the column.</li>
+            <li>It works in list views and in order lines inside forms.</li>
+        </ul>
+        <p>Tooltip on a column group, shown in debug mode:</p>
+        <img class="img img-fluid" src="list_header_screenshot.png" alt="Tooltip on a list column header in debug mode"/>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Order and invoice totals</h2>
+        <ul>
+            <li>Hover Untaxed Amount, a tax line or Total to see the field behind the amount.</li>
+            <li>The Margin line is covered on Sales Orders when <code>sale_margin</code> is installed.</li>
+        </ul>
+        <p>Tooltip on Untaxed Amount, shown in debug mode:</p>
+        <img class="img img-fluid" src="totals_screenshot.png" alt="Tooltip on the totals of a Sales Order in debug mode"/>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">Technical details in debug mode</h2>
+        <p>
+            Technical details are for developers, so they only appear in debug mode.
+            Outside debug mode, tooltips stay simple.
+        </p>
+        <ul>
+            <li>Technical field name and field type.</li>
+            <li>Model of the record.</li>
+            <li>On totals, the expression to use in report templates, for example <code>format_amount(object.amount_total)</code>.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan">How to use</h2>
+        <ol>
+            <li>Install the module. The Sales app is installed with it as a dependency.</li>
+            <li>Hover a list column header, or a label in the totals block of an order or invoice.</li>
+            <li>Wait a moment for the tooltip to appear.</li>
+            <li>Activate the developer mode to see the technical details.</li>
+        </ol>
+        <p>There is nothing to configure.</p>
+    </div>
+</section>

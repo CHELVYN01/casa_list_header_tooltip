@@ -7,6 +7,10 @@
     "author": "Casa",
     "license": "LGPL-3",
     "depends": ["sale"],
+    "images": [
+        "static/description/list_header_screenshot.png",
+        "static/description/totals_screenshot.png",
+    ],
     "assets": {
         "web.assets_backend": [
             "casa_field_tooltip/static/src/list_header_tooltip.js",
