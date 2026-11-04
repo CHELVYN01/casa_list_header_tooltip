@@ -1,6 +1,6 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 {
-    "name": "Sale Totals Tooltips",
+    "name": "Sales & Invoice Totals Tooltips",
     "summary": "Hovering the totals of orders and invoices (Untaxed Amount, taxes, Total, Margin) shows the fields behind them",
     "version": "20.0.1.0.0",
     "category": "Hidden/Tools",

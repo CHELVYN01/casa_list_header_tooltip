@@ -1,6 +1,6 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 {
-    "name": "List Header Tooltips",
+    "name": "List Column Header Tooltips",
     "summary": "Hovering a list column header shows its field(s), as in Odoo 18, column groups included",
     "version": "20.0.1.0.0",
     "category": "Hidden/Tools",
