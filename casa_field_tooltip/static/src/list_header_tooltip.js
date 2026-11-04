@@ -5,7 +5,7 @@ import { onMounted, onPatched } from "@odoo/owl";
 import { patch } from "@web/core/utils/patch";
 import { ListRenderer } from "@web/views/list/list_renderer";
 
-const GROUP_TEMPLATE = "casa_list_header_tooltip.ColumnGroupTooltip";
+const GROUP_TEMPLATE = "casa_field_tooltip.ColumnGroupTooltip";
 
 /**
  * Odoo 18 showed a tooltip on every list header (label and help, or the

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
-    <t t-name="casa_sale_totals_tooltip.Tooltip">
+    <t t-name="casa_field_tooltip.TotalsTooltip">
         <div class="fw-bold" t-out="title"/>
         <ul t-if="fields.length" class="list-unstyled mb-0 mt-1">
             <li t-foreach="fields" t-as="entry" t-key="entry_index">
@@ -18,25 +18,25 @@
 
     <t t-inherit="account.TaxTotalsField" t-inherit-mode="extension">
         <xpath expr="//t[@t-foreach='totals.subtotals']/tr/td/label" position="attributes">
-            <attribute name="data-tooltip-template">casa_sale_totals_tooltip.Tooltip</attribute>
+            <attribute name="data-tooltip-template">casa_field_tooltip.TotalsTooltip</attribute>
             <attribute name="t-att-data-tooltip-info">this.casaSubtotalTooltip(subtotal, subtotal_index)</attribute>
         </xpath>
         <xpath expr="//tr[td/span[@name='amount_total']]/td/label" position="attributes">
-            <attribute name="data-tooltip-template">casa_sale_totals_tooltip.Tooltip</attribute>
+            <attribute name="data-tooltip-template">casa_field_tooltip.TotalsTooltip</attribute>
             <attribute name="t-att-data-tooltip-info">this.casaTotalTooltip()</attribute>
         </xpath>
     </t>
 
     <t t-inherit="account.TaxGroupComponent" t-inherit-mode="extension">
         <xpath expr="//label[hasclass('o_tax_total_label')]" position="attributes">
-            <attribute name="data-tooltip-template">casa_sale_totals_tooltip.Tooltip</attribute>
+            <attribute name="data-tooltip-template">casa_field_tooltip.TotalsTooltip</attribute>
             <attribute name="t-att-data-tooltip-info">this.casaTaxGroupTooltip()</attribute>
         </xpath>
     </t>
 
     <t t-inherit="sale.ExtraTotalsField" t-inherit-mode="extension">
         <xpath expr="//t[@t-foreach='group.lines']/tr/td/label" position="attributes">
-            <attribute name="data-tooltip-template">casa_sale_totals_tooltip.Tooltip</attribute>
+            <attribute name="data-tooltip-template">casa_field_tooltip.TotalsTooltip</attribute>
             <attribute name="t-att-data-tooltip-info">this.casaExtraLineTooltip(line)</attribute>
         </xpath>
     </t>
