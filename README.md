@@ -16,6 +16,8 @@ Free Odoo 20 module that shows which fields sit behind list columns and totals w
 
 **Debug mode**
 
+Technical details are for developers, so they only appear in debug mode. Outside debug mode, tooltips stay simple and show the field label and help text.
+
 - Tooltips also show the technical field name, field type and model.
 - Totals show the expression to use in report templates, for example `format_amount(object.amount_total)`.
 
